@@ -215,6 +215,17 @@ main{
   margin-top: 30px;
 }
 
+#projects{
+  display:flex;
+  flex-direction: column;
+  padding: 2.5rem 1rem;
+}
+
+#projects h2{
+  font-size: 2rem;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .header-container {
     position: fixed;

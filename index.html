@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <header class="header-container">
+    <header  class="header-container">
       <nav class="header--desktop">
         <ul class="menu menu--desktop">
           <li class="menu__item">
@@ -23,7 +23,7 @@
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="#projetos">
+            <a class="menu__link" href="#projects">
               <span class="menu__text">Projetos</span>
             </a>
           </li>
@@ -50,7 +50,7 @@
         <i id="toggleTheme" class="bi bi-sun"></i>
       </div>
     </header>
-    <nav class="nav--mobile">
+    <nav id="home" class="nav--mobile">
       <ul class="menu menu--mobile">
         <li class="menu__item">
           <a class="menu__link active" href="#home">
@@ -60,7 +60,7 @@
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#projetos">
+          <a class="menu__link" href="#projects">
             <i class="menu__icon bi bi-window-stack"></i>
             <span class="menu__text">Projetos</span>
           </a>
@@ -81,7 +81,7 @@
     </nav>
 
     <main>
-      <div class="main__content">
+      <div  class="main__content">
         <h1>Desenvolvedor Front-end</h1>
         <p>Ronaldo Nascimento, São Paulo-SP</p>
         <ul class="menu menu--social">
@@ -164,16 +164,189 @@
             src="./assets/image/coffee-shop.png"
             alt=""
           />
-          <h3 class="card__title">Coffe-Shop</h3>
+          <div class="card__body">
+            <h3 class="card__title">Coffe-Shop</h3>
           <p class="card_description">Landing page cafeteria</p>
           <ul class="card__list">
             <li>Conheça nossa cafeteria</li>
             <li>Cardápio com variados tipos de café</li>
             <li>Nossa localização</li>
           </ul>
+          <ul class="tech__list">
+            <li class="tech__item">
+              <img
+                class="tech_logo"
+                src="./assets/image/html5-logo.png"
+                alt="logo html 5"
+              />
+            </li>
+            <li class="tech__item">
+              <img
+                class="tech_logo"
+                src="./assets/image/css3-logo.png"
+                alt="logo css 3"
+              />
+            </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+              <button class="btn">
+                <span>Repositório</span>
+                
+              </button>
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>
+<!-- About -->
+    <section id="sobre" class="about">
+      <div class="about__content1">
+        <img class="about__photo" src="./assets/image/rn_avatar.jpg" alt="foto perfil">
+        <div class="about__description">
+          <h2>Sobre mim</h2>
+          <p>Ronaldo Nascimento. Desenvolvedor web em inicio de carreira.
+            Decidi estudar programação porque a sociedade esta cada vez conectada,fazendo tudo através de aplicações.Então vi como promissor entrar nessa em crescimento.
+            Cursei Sistemas para Internet e conclui varios cursos complemetares e bootcamps voltados para programação.
+          </p>  
+          <div class="about__icons">
+            <i class="bi bi-translate"></i>
+            <span>Inglês: Basico</span>
+          </div>
+          <div class="description__buttons">
+            <a href="https://www.linkedin.com/in/ronaldona5cimento " target="_blank">
+              <button class="btn btn--primary">
+                <span>Conecte-se Comigo</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button> 
+            </a>
+            <a href="">
+              <button class="btn">
+                <span>Currículo</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="about__content2">
+        <div class="col1">
+          <div class="row1">
+            <h3>Formação</h3>
+            <h4>Sistemas para Internet</h4>
+            <span>08/2022 - Atualmente</span>
+            <div class="about__icons">
+              <i class="bi bi-bank"></i>
+              <span>Estácio</span>
+            </div>
+            
+          </div>
+          <div class="row2">
+            <h3>Experiências</h3>
+            <h4>Instrutora</h4>
+            <span>Digital Innovation One. Fev 2023 - Atualmente</span>
+            <span>Produção de conteúdos educacionais direcionados a 
+              alunos iniciantes que desejam construir uma base no Desenvolvimento Front-end.
+            </span>
+            <ul class="about__list">
+              <li class="about__item">Elaboração de ementas;</li>
+              <li class="about__item">Ministração de aulas assíncronas;</li>
+              <li class="about__item">Produção de materiais complementares.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col2">
+          <h3>Cursos</h3>
+          <div id="accordion">
+            <div class="accordion__item active">
+              <button class="accordion__header start">
+                <span>Versionamento de Código com Git e GitHub</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>
+                  Digital Innovation One. Fev 2023. 2h.
+                </p>
+                <p>
+                  O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas 
+                  operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem 
+                  até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar alterações 
+                  com o repositório remoto. 
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                <span>Contribuindo em um Projeto Open Source no GitHub</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>
+                  Digital Innovation One. Fev 2023. 1h.
+                </p>
+                <p>
+                  Lab prático sobre colaboração em projetos de código aberto.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header end">
+                <span>Organizando seus Estudos com os Roadmaps DIO e o Notion</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body end">
+                <p>
+                  Digital Innovation One. Fev 2023. 2h.
+                </p>
+                <p>
+                  Otimização dos estudos com os Roadmaps DIO, construindo um caderno de estudos com a ferramenta Notion.
+                </p>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+    <section id="contato" class="contact">
+      <h2>Contate-me</h2>
+      <p>Estou disponível para serviços e novas conexões. Contate-me via 
+        e-mail e conecte-se comigo através das minhas redes sociais.
+      </p>
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/orlandoseven" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+            <span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/ronaldona5cimento" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="" target="_blank">
+            <i class="menu__icon bi bi-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </li>
+      </ul>
+      <a href="mailto:lp.ronnaldo@gmail.com">
+        <button class="btn btn--primary">
+          <span class="email">lp.ronnaldo@gmail.com</span>
+        </button>  
+      </a>
+    </section>
+    <footer>
+      <p>
+        © 2024. Portfólio desenvolvido para fins educativos no Lab "Construindo seu Portfolio Front-end do Zero" da 
+        <a href="https://www.dio.me/" target="_blank">Digital Innovation One</a> por 
+        <a href="https://github.com/orlandoseven" target="_blank">Ronaldo</a>.
+      </p>
+    </footer>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
